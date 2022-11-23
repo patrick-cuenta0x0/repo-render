@@ -40,7 +40,7 @@ class CallingUpload:
                     except:pass
 
 
-async def create_session(proxy:ProxyCloud=None,username='fbdaniellee',password='laponosa'):
+async def create_session(proxy:ProxyCloud=None,username='firliadh',password='hdezdl923'):
     HOST = 'https://repotematico.uo.edu.cu/'
     HEADERS = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0'}
     proxies = None
