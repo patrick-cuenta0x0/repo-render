@@ -22,8 +22,8 @@ from pydownloader.downloader import Downloader
 import shorturl
 import xdlink
 
-tl_admin_users = ['Ken_Kaneki_ofc',] #Poner aqui los user con acceso permanente
-godlist = ['Ken_Kaneki_ofc'] #Poner aqui los admin 
+tl_admin_users = ['bladimirlorenzo'] #Poner aqui los user con acceso permanente
+godlist = ['bladimirlorenzo'] #Poner aqui los admin 
 
 async def get_root(username):
     if os.path.isdir(config.ROOT_PATH+username)==False:
@@ -171,7 +171,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     #if username not in config.ACCES_USERS:
     if username not in tl_admin_users:
-        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @Ken_Kaneki_ofc ❌')
+        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @bladimirlorenzo ❌')
         return
 
     if not os.path.isdir(config.ROOT_PATH + username):
@@ -213,9 +213,9 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         pass
 
     if '/start' in text:
-        reply = '————————》<a href="https://t.me/Ken_Kaneki_ofc">Tokyo</a>《—————————\n'
-        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒 Tokyo\n\n'
-        reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/Ken_Kaneki_ofc">Tokyo</a>《—————————\n'
+        reply = '————————》<a href="https://t.me/bladimirlorenzo">bladimirlorenzo</a>《—————————\n'
+        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒 bladimirlorenzo\n\n'
+        reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/bladimirlorenzo">bladimirlorenzo</a>《—————————\n'
         message = await bot.send_message(ev.chat.id,reply,parse_mode='html')
         pass
     if '/add' in text and username in godlist:
@@ -433,7 +433,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
             await bot.send_file(ev.chat,txtsendname,
                                 caption=f'{txtinfo}',
                                 thumb='thumb.png',
-                                buttons=[Button.url('Tokyo','https://t.me/Ken_Kaneki_ofc')])
+                                buttons=[Button.url('bladimirlorenzo','https://t.me/bladimirlorenzo')])
             await bot.send_file(ev.chat,premium)
             #await bot.send_file('-1001831303559',txtsendname,
                                 #caption=f'{txtinfo}',
