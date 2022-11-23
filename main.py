@@ -272,7 +272,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         txc = str(text).split('/admin ')
         t = '🙋‍♂️🗣 @' + username + '\n\n>> ' +  txc[1]
         print(t)
-        message = await bot.send_message(1806431279,txc)
+        message = await bot.send_message(838890371,txc)
         message = await bot.send_message(ev.chat.id,'📡 𝓜𝓮𝓷𝓼𝓪𝓳𝓮 𝓻𝓮𝓹𝓸𝓻𝓽𝓪𝓭𝓸 𝓪𝓵 𝓪𝓭𝓶𝓲𝓷𝓲𝓼𝓽𝓻𝓪𝓭𝓸𝓻')
         return
     
@@ -435,7 +435,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
                                 thumb='thumb.png',
                                 buttons=[Button.url('bladimirlorenzo','https://t.me/bladimirlorenzo')])
             await bot.send_file(ev.chat,premium)
-            #await bot.send_file('-1001831303559',txtsendname,
+            #await bot.send_file('-1001724650213',txtsendname,
                                 #caption=f'{txtinfo}',
                                 #thumb='thumb.png',
                                 #buttons=[Button.url('@' +username,'https://t.me/' + username)])
